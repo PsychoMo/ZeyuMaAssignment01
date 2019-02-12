@@ -27,6 +27,18 @@
 
     <!-- ======================================== -->
 
+    <!-- begin if Products -->
+    <% if (title == "Projects") {%>
+
+    <!-- Display Product Page -->
+    <% include ./partials/contents/products.ejs %>
+    <!-- when product is selected -->
+
+    <% } %>
+    <!-- end if products -->
+
+    <!-- ======================================== -->
+
     <!-- begin if contact -->
     <% if (title == "Contact") {%>
     <a class="btn btn-primary" href="/contact-list" role="button"
