@@ -1,58 +1,43 @@
 <% include ./partials/header.ejs %>
 
-<div class="container">
+<div class="container" style="padding-top: 80px">
   <div class="divMain">
     <h1 class="display-4">Welcome to <%= title %></h1>
+    <!-- begin if home -->
     <% if (title == "Home") {%>
 
-    <!-- Home page, later to be migrated to partials -->
-    <h5 style="text-align: center">
-      Software Developer is where my 3 years of Software Engineering Technology
-      experience will be applied. Aiming to use my C# & Java knowledge, web &
-      mobile development skills, SQL & database expertise, communication and
-      teamworking qualities to deliver best work to fill Software Developer
-      role.
-    </h5>
-    <img
-      src="/Assets/EnhancementPics/DecHr.png"
-      alt="A decorative horizontal line"
-    />
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <p class="text-wrap" style="width: 17rem; font-size: 60px;">
-            Hi, I am Zeyu Ma
-          </p>
-        </div>
-        <div class="col-sm">
-          <div class="profileCard">
-            <img
-              src="/Assets/ProfilePics/ProfilePic.JPG"
-              alt=""
-              class="profilePic"
-            />
-            <h1>Zeyu Ma</h1>
-            <p class="myTitle">Software Engineer</p>
-            <p>Centennial College</p>
-          </div>
-        </div>
-        <div class="col-sm">
-          <a class="btn btn-primary" href="/about" role="button"
-            >Find out more about me</a
-          >
-        </div>
-      </div>
-    </div>
+    <!-- Display Home Page -->
+    <% include ./partials/contents/home.ejs %>
+    <!-- when home is selected -->
 
-    <% } %> <% if (title == "Contact") {%>
+    <% } %>
+    <!-- end if home -->
+
+    <!-- ======================================== -->
+
+    <!-- begin if About -->
+    <% if (title == "About") {%>
+
+    <!-- Display About Page -->
+    <% include ./partials/contents/about.ejs %>
+    <!-- when about is selected -->
+
+    <% } %>
+    <!-- end if about -->
+
+    <!-- ======================================== -->
+
+    <!-- begin if contact -->
+    <% if (title == "Contact") {%>
     <a class="btn btn-primary" href="/contact-list" role="button"
       >Contact List</a
     >
-    <% } %> <% if (title == "About") {%>
+    <% } %>
+    <!-- <% if (title == "About") {%>
     <a class="btn btn-primary" href="/favourite-list" role="button"
       >Favourite List</a
     >
-    <% } %>
+    <% } %> -->
   </div>
 </div>
 
