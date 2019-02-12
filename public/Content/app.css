@@ -1,1 +1,42 @@
 /* custom css goes here*/
+
+.divMain {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0.5%;
+  background: rgba(223, 229, 233, 0.548);
+  z-index: 1;
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.profileCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+
+.myTitle {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.profilePic {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+body {
+  background-image: url("/Assets/EnhancementPics/2049_by_SZDLa.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
