@@ -25,6 +25,17 @@
   /* color: #f0f8ff; */
 }
 
+.divPanelCell {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 10%;
+  line-height: 30px;
+  z-index: 1;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* color: #f0f8ff; */
+}
+
 .divMidCell {
   width: 10%;
 }
@@ -53,6 +64,17 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.contactForm {
+  width: 500px;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #6d7212;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px #ccc;
 }
 
 body {

@@ -16,3 +16,20 @@
 
   window.addEventListener("load", Start);
 })();
+
+function ValidateForm() {
+  var emailAddress = document.forms["contactMe"]["txtEmailAddress"];
+
+  if (
+    emailAddress.value.indexOf("@", 0) < 0 ||
+    emailAddress.value.indexOf(".", 0) < 0
+  ) {
+    window.alert("Please enter a valid e-mail address.");
+    if (window.event) {
+      window.event.returnValue = false;
+    } else {
+      preventDefault();
+    }
+  }
+  return true;
+}

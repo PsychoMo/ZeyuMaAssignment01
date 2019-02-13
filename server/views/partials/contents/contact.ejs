@@ -1,0 +1,91 @@
+<table>
+  <tr style="height: 200px;">
+    <td class="divPanelCell">
+      <p><b>Email: </b>zma29@my.centennialcollege.ca</p>
+      <p><b>Phone: </b>519-731-4379</p>
+    </td>
+    <td class="divSideCell"></td>
+  </tr>
+  <tr>
+    <td class="divPanelCell"></td>
+    <td class="divSideCell">
+      <form
+        name="contactMe"
+        onsubmit="return ValidateForm();"
+        action="/"
+        method="get"
+        class="form"
+      >
+        <fieldset class="contactForm">
+          <legend>Personal Info:</legend>
+          <p>
+            <label for="txtFirstName">First Name:</label>
+            <br />
+            <input
+              name="txtFirstName"
+              size="35"
+              tabindex="5"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="txtLastName">Last Name:</label>
+            <br />
+            <input
+              name="txtLastName"
+              size="35"
+              tabindex="7"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+          </p>
+          <p>
+            <label for="txtPhoneNumber">Phone Number:</label>
+            <br />
+            <input
+              name="txtPhoneNumber"
+              size="35"
+              tabindex="9"
+              type="text"
+              placeholder="Phone Number"
+              required
+            />
+          </p>
+          <p>
+            <label for="txtEmailAddress">Email Address:</label>
+            <br />
+            <input
+              name="txtEmailAddress"
+              size="35"
+              tabindex="11"
+              type="text"
+              placeholder="Email Address"
+              required
+            />
+          </p>
+          <p>
+            <label for="txtaMessage">Message:</label>
+            <br />
+            <textarea
+              name="txtaMessage"
+              tabindex="13"
+              cols="30"
+              rows="10"
+              placeholder="Hi Zeyu, nice to meet you!"
+            ></textarea>
+          </p>
+
+          <input
+            type="submit"
+            value="send"
+            name="Submit"
+            class="btn btn-secondary"
+          />
+        </fieldset>
+      </form>
+    </td>
+  </tr>
+</table>
