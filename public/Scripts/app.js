@@ -1,4 +1,10 @@
 // IIFE -- Immediately Invoked Function Expression
+
+/* File Name: ZeyuMaAssignment01
+   Student's Name: Zeyu Ma
+   StudentID: 300737060
+   Date: 02/12/2019 */
+
 (function() {
   function Start() {
     console.log(
