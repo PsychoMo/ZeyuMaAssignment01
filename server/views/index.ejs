@@ -27,29 +27,41 @@
 
     <!-- ======================================== -->
 
-    <!-- begin if Products -->
+    <!-- begin if Projects -->
     <% if (title == "Projects") {%>
 
-    <!-- Display Product Page -->
+    <!-- Display Projects Page -->
     <% include ./partials/contents/products.ejs %>
-    <!-- when product is selected -->
+    <!-- when project is selected -->
 
     <% } %>
     <!-- end if products -->
 
     <!-- ======================================== -->
 
-    <!-- begin if contact -->
-    <% if (title == "Contact") {%>
-    <a class="btn btn-primary" href="/contact-list" role="button"
-      >Contact List</a
-    >
+    <!-- begin if Services -->
+    <% if (title == "Services") {%>
+
+    <!-- Display Services Page -->
+    <% include ./partials/contents/services.ejs %>
+    <!-- when services is selected -->
+
     <% } %>
-    <!-- <% if (title == "About") {%>
-    <a class="btn btn-primary" href="/favourite-list" role="button"
-      >Favourite List</a
-    >
-    <% } %> -->
+    <!-- end if services -->
+
+    <!-- ======================================== -->
+
+    <!-- begin if Contact -->
+    <% if (title == "Contact") {%>
+
+    <!-- Display Contact Page -->
+    <% include ./partials/contents/contact.ejs %>
+    <!-- when contact is selected -->
+
+    <% } %>
+    <!-- end if contact -->
+
+    <!-- ======================================== -->
   </div>
 </div>
 
